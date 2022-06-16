@@ -11,12 +11,81 @@
 }
 
 .boxone {
-
   background-color: #0077FF;
-  margin-bottom: 1rem;
+  margin-bottom: 0.8rem;
   border-radius: 1.25rem;
-  padding: 0.75rem 3rem 0.75rem 3rem;
+  padding: 0.25rem 3rem 0.25rem 3rem;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.boxtwo {
+  border-radius: 1.25rem;
+  padding: 0.15rem;
+  margin-bottom: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.course {
+  border-radius: 1.25rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #FFF0F7;
+  height: 20%;
+  padding: 0.2rem 1rem;
+}
+
+.play{
+  display: flex;
+  align-items: center;
+  gap:0.5rem;
+}
+
+.leaderboard{
+  border-radius: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: white;
+  height: 80%;
+  padding: 2px 1rem;
+}
+
+.overall {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.rank{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.postion{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.backlogs{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.diagnostic{
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
 }
