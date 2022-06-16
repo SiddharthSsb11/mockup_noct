@@ -4,11 +4,15 @@ import {
   Text,
   Icon,
   Button,
-  Heading,
   Image,
   Circle,
 } from "@chakra-ui/react";
 import { BsPlayCircle, BsCheck2Circle } from "react-icons/bs";
+import { RiNumber6 } from "react-icons/ri";
+import {TbNotes} from "react-icons/tb";
+import {HiVideoCamera} from "react-icons/hi";
+import{FaPen} from "react-icons/fa";
+
 import {
   ChevronRightIcon,
   TriangleDownIcon,
@@ -28,7 +32,7 @@ function App() {
         alignItems="center"
         gap="1rem"
         p={2}
-        height="42.5rem"
+        height="43.5rem"
         w="45%"
         bg="gray.300"
         borderRadius="sm" /* border="1.5px solid black" */
@@ -331,7 +335,7 @@ function App() {
                   <Text textAlign="center" mb={-1}>
                     10
                   </Text>
-                  <Text >Questions</Text>
+                  <Text>Questions</Text>
                 </Box>
                 <Box
                   d="flex"
@@ -340,7 +344,7 @@ function App() {
                   color="gray.500"
                   fontWeight="bold"
                 >
-                  <Text  textAlign="center" mb={-1}>
+                  <Text textAlign="center" mb={-1}>
                     15min
                   </Text>
                   <Text>Duration</Text>
@@ -359,8 +363,202 @@ function App() {
           </Box>
         </Box>
 
-        <Box height="28.5%" bg="gray.100" borderRadius="2xl" p={1}>
-          C
+        <Box
+          className="boxThree"
+          height="28.5%"
+          bg="white"
+          borderRadius="2xl"
+          py={2}
+          px={3}
+          width="100%"
+        >
+          <Box
+            className="overall"
+            width="100%"
+            px={1}
+            //mb={2}
+            fontWeight="bold"
+          >
+            <Text fontSize="lg">Activities</Text>
+            <Text fontSize="xs" color="purple.600">
+              See All
+            </Text>
+          </Box>
+
+          <Box className="boxtwo" width="95%" alignSelf="start">
+            <Box
+              height="100%"
+              width="50%"
+              d="flex"
+              flexDir="column"
+              alignItems="center"
+              p={1} mr={1.5}
+              justifyContent="space-between"
+              gap="1rem"
+            >
+              <Box className="activities" width="100%" bg="blue.50" mb={2} p={2.5}>
+                <Box
+                  className="play"
+                  //width="70%"
+                  //px={2}
+                >
+                  <Circle
+                    size="40px"
+                    bg="blue.400"
+                    color="white"
+                    fontSize="xl"
+                    alignSelf="center"
+                  >
+                    <Icon as={RiNumber6} /* bg="white"  borderRadius="50%" */ />
+                  </Circle>
+
+                  <Box
+                    d="flex"
+                    flexDir="column"
+                    alignItems="start"
+                    justifyContent="start"
+                    gap="0.2em"
+                    fontWeight="bold"
+                  >
+                    <Text fontSize="xs" color="black">
+                      {" "}
+                      Monthly Test{" "}
+                    </Text>
+                    <Text color="gray.500" fontSize="0.6rem">
+                      6th, July 2021. 20 days left.
+                    </Text>
+                    <Text fontSize="0.6rem" color="gray.500">
+                      Based on 3 topics from math sections.
+                    </Text>
+                  </Box>
+                </Box>
+
+                <ChevronRightIcon w={6} h={6} />
+              </Box>
+
+              <Box className="activities" width="100%" bg="green.50" p={2.5}>
+                <Box
+                  className="play"
+                  //width="70%"
+                  //px={2}
+                >
+                  <Circle
+                    size="40px"
+                    bg="green.400"
+                    color="white"
+                    fontSize="xl"
+                    alignSelf="center"
+                  >
+                    <Icon as={TbNotes} /* bg="white"  borderRadius="50%" */ />
+                  </Circle>
+
+                  <Box
+                    d="flex"
+                    flexDir="column"
+                    alignItems="start"
+                    justifyContent="start"
+                    gap="0.2em"
+                    fontWeight="bold"
+                  >
+                    <Text fontSize="xs" color="black">
+                      Primary Purpose
+                    </Text>
+                    <Text color="gray.500" fontSize="0.6rem">
+                     Writing Section. 30 mins
+                    </Text>
+                  </Box>
+                </Box>
+
+                <ChevronRightIcon w={6} h={6} />
+              </Box>
+            </Box>
+
+            <Box
+              height="100%"
+              width="50%"
+              d="flex"
+              flexDir="column"
+              alignItems="center"
+              p={1}
+              justifyContent="space-between"
+              gap="1rem"
+            >
+              <Box className="activities" width="100%"  bg="#FFF0F7" mb={2} p={2.5}>
+                <Box
+                  className="play"
+                  //width="70%"
+                  //px={2}
+                >
+                  <Circle
+                    size="40px"
+                    bg="#FF1584"
+                    color="white"
+                    fontSize="xl"
+                    alignSelf="center"
+                  >
+                    <Icon as={HiVideoCamera} /* bg="white"  borderRadius="50%" */ />
+                  </Circle>
+
+                  <Box
+                    d="flex"
+                    flexDir="column"
+                    alignItems="start"
+                    justifyContent="start"
+                    gap="0.2em"
+                    fontWeight="bold"
+                  >
+                    <Text fontSize="xs" color="black">
+                      Why Liberate ? 
+                    </Text>
+                    <Text color="gray.500" fontSize="0.6rem">
+                      6th, July 2022. 1 hr
+                    </Text>
+                    <Text fontSize="0.6rem" color="#FF1584">
+                      Join Webinar
+                    </Text>
+                  </Box>
+                </Box>
+
+                <ChevronRightIcon w={6} h={6} />
+              </Box>
+
+              <Box className="activities" width="100%"  bg="orange.50"  p={2.5}>
+                <Box
+                  className="play"
+                  //width="70%"
+                  //px={2}
+                >
+                  <Circle
+                    size="40px"
+                    bg="orange.400"
+                    color="white"
+                    fontSize=";lg"
+                    alignSelf="center"
+                  >
+                    <Icon as={FaPen} /* bg="white"  borderRadius="50%" */ />
+                  </Circle>
+
+                  <Box
+                    d="flex"
+                    flexDir="column"
+                    alignItems="start"
+                    justifyContent="start"
+                    gap="0.2em"
+                    fontWeight="bold"
+                  >
+                    <Text fontSize="xs" color="black">
+                      Weekly Quiz 1
+                    </Text>
+                    <Text color="gray.500" fontSize="0.6rem">
+                      10 Questions. 25 mins.
+                    </Text>
+                  </Box>
+                </Box>
+
+                <ChevronRightIcon w={6} h={6} />
+              </Box>
+            </Box>
+          </Box>
         </Box>
       </Box>
     </div>
